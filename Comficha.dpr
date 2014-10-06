@@ -2,13 +2,15 @@ program Comficha;
 
 uses
   Vcl.Forms,
-  inicio in 'inicio.pas' {Form1};
+  inicio in 'inicio.pas' {FichaInput},
+  salida in 'salida.pas' {FichaOutput};
 
 {$R *.res}
 
 begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
-  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TFichaInput, FichaInput);
+  Application.CreateForm(TFichaOutput, FichaOutput);
   Application.Run;
 end.

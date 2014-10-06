@@ -84,7 +84,11 @@
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
         <DCCReference Include="inicio.pas">
-            <Form>Form1</Form>
+            <Form>FichaInput</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="salida.pas">
+            <Form>FichaOutput</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Release">
